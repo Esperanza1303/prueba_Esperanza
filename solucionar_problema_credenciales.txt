@@ -1,0 +1,16 @@
+Os puede pasar que al intentar subir un documento o cualquier otro tipo de archivo a los repositorios de otra persona (por ejemplo de Esperanza) luego 
+de hacerle git clone a su repo os diga que ha habido un error de credenciales y da igual cuántas veces metáis vuestro usuario y contraseña os seguirá
+diciendo que están equivocados aunque no lo estén. Por lo visto GitHub dejó de darle soporte hace algunos años a la validación por credenciales y ahora
+usa un sistema de tokens. 
+
+Lo que tenéis que hacer para subir los documentos a por ejemplo aquí, sería ir a vuestra cuenta de GitHub "Settings", bajar abajo del todo donde pone 
+"Developer Settings", ahí vais a "Personal access tokens" y generáis "Token classic". Cuando tengáis vuestro Token, volvéis a vuestra carpeta donde 
+estéis trabajando con git, por ejemplo "curso_ASIR", y volvéis a entrar en la carpeta que hayáis clonado donde está el repositorio de Esperanza con
+git clone (dirección del repo de Esperanza). 
+
+Una vez dentrop, ponéis lo siguiente: git remote set-url origin https://(dirección_de_vuestro_token)/Esperanza1303/prueba_Esperanza
+
+No os dará ningún error. Ahora ya podéis editar, añadir o borrar un archivo, hacer git add ., seguido de git commit -m "actualizacion" seguido de git push. 
+
+
+
