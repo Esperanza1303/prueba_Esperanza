@@ -1,0 +1,11 @@
+1. Instala git. 
+2. Genera la carpeta .ssh usando el siguiente comando en el terminal: ssh-keyugen -t rsa -b 4096 -C "tucorreodegithub@and.safanet.es"
+3. Presiona Enter a lo que te diga sin especificar nada. 
+4. Tendrás una carpeta .ssh generada en tu carpeta de usuario. Tu carpeta de usuario y home NO son lo mismo. La ruta de tu usuario en Linux es
+/home/usuario (donde pone usuario, pon tu nombre). Otra forma de acceder mediante el terminal es poniendo simplemente cd ~.
+5. Dentro habrá una carpeta oculta llamada .ssh, puedes verla escribiendo ls -a. Desde donde estás (cd ~) escribe cd /.ssh
+6. Pon ls. Verás dos archivos. Olvida el que se llama id_rsa. Escribe, sin las comillas, "cat id_rsa.pub". Aparecerá una clave muy larga que terminará
+en tu dirección de correo. Cópiala y pégala en tu cuenta de GitHub.
+7. Para eso, entra en GitHub, clica arriba a la derecha en tu perfil de usuario, selecciona "Settings". Ahora, en la izquierda, selecciona "SSH 
+and GPG keys". Ignora GPG Keys. En SSH keys, dale a New SSH Key, ponle el nombre que tú quieras y copia en el cuadro de texto grande toda la clave 
+que has generado antes. Asegúrate de que es idéntica en ambos sitios. Acepta y si no contiene ningún error tipográfico, se añadirá.
